@@ -4,64 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#1e3a5f" />
-
   <title>ACF Capital — Factoring Empresarial | Liquidez Inmediata</title>
-  <meta name="description" content="Anticipa tus facturas con ACF Capital. Proceso 100% digital, respuesta rápida y tasas competitivas para tu empresa." />
+  <meta name="description" content="ACF CAPITAL S.A. financia a empresas mediante el anticipo de cuentas por cobrar. Respuesta en 24 horas, proceso 100% digital y tasas competitivas." />
 
-  <!-- Seguridad (CSP con nonce) -->
-  <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    img-src 'self' https://www.acfcapital.cl data:;
-    style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
-    script-src 'self' 'nonce-abc123';
-    connect-src 'self';
-    frame-ancestors 'none';
-    base-uri 'self';
-    form-action 'self'
-  ">
-
-  <!-- Fuentes e iconos -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-TNb0qTz9slbqj9rAq3Cwq7CwJ3nU9k1mVQqD1T0m6LD8QkA3nQx5j1O5F0mHcih8Gr9Q6m2s4yYp8n+uQeQf3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="./styles.css" />
-  <link rel="canonical" href="https://www.acfcapital.cl/" />
 </head>
-<body>
+<body id="top">
   <!-- Header -->
-  <header class="header" role="banner">
+  <header class="header">
     <div class="container header-content">
-      <a class="logo-link" href="#top" aria-label="Ir al inicio">
-        <img src="https://www.acfcapital.cl/acfcapital/images/logo_acf.svg" alt="ACF Capital" class="logo" width="200" height="40" />
+      <a class="logo-link" href="#top">
+        <img src="https://www.acfcapital.cl/acfcapital/images/logo_acf.svg" alt="ACF Capital" class="logo" width="176" height="40" />
       </a>
       <button id="navToggle" class="nav-toggle" aria-label="Abrir/cerrar menú" aria-expanded="false">
         <i class="fa-solid fa-bars"></i>
       </button>
-      <nav id="nav" class="nav" role="navigation" aria-label="Navegación principal">
+      <nav id="nav" class="nav">
         <a href="#servicios">Servicios</a>
-        <a href="#proceso">Proceso</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#ventajas">Ventajas</a>
+        <a href="#productos">Productos</a>
+        <a href="#requisitos">Requisitos</a>
+        <a href="#preguntas">Preguntas</a>
         <a href="#simulador">Simulador</a>
         <a href="#oficinas">Oficinas</a>
         <a href="#contacto">Contacto</a>
       </nav>
       <div class="nav-actions">
-        <button class="btn btn-primary" id="loginToggle" aria-label="Acceso para clientes">
-          <i class="fa-solid fa-user" aria-hidden="true"></i>
-          Acceso clientes
+        <button class="btn btn-primary" id="loginToggle">
+          <i class="fa-solid fa-user"></i> Acceso clientes
         </button>
       </div>
     </div>
   </header>
 
-  <main id="main-content" role="main">
+  <main>
     <!-- HERO -->
     <section class="hero hero--pro" data-images='[
-      "https://www.acfcapital.cl/acfcapital/images/fondo_preguntas_frec.jpg?crc=53158438",
-      "https://www.acfcapital.cl/acfcapital/images/fondo_c.jpg?crc=404174028",
-      "https://www.acfcapital.cl/acfcapital/images/fondo_b.jpg?crc=4148428054"
+      "https://www.acfcapital.cl/acfcapital/images/fondo_preguntas_frec.jpg",
+      "https://www.acfcapital.cl/acfcapital/images/fondo_c.jpg",
+      "https://www.acfcapital.cl/acfcapital/images/fondo_b.jpg"
     ]'>
-      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__overlay"></div>
       <div class="container hero__grid">
         <div class="hero__left">
           <div class="hero__badge">Financiamiento ágil</div>
@@ -76,345 +62,141 @@
             <li><i class="fa-solid fa-check"></i> Plataforma digital segura</li>
             <li><i class="fa-solid fa-check"></i> Para pymes y empresas</li>
           </ul>
-        </div><div class="stat-label">Financiamiento mensual</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-value">24h</div>
-              <div class="stat-label">Tiempo de respuesta</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-value">15+</div>
-              <div class="stat-label">Años de experiencia</div>
-            </div>
-          </div>
         </div>
       </div>
-      <div class="hero__bg is-active" aria-hidden="true"></div>
-      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__bg is-active"></div>
+      <div class="hero__bg"></div>
     </section>
 
-
-    <!-- KPIs destacados (movidos desde el HERO) -->
-    <section class="kpis reveal" aria-label="Indicadores principales">
-      <div class="container">
-        <div class="kpis-grid">
-          <div class="kpi-card">
-            <div class="kpi-value">$150MM+</div>
-            <div class="kpi-label">Financiamiento mensual</div>
-          </div>
-          <div class="kpi-card">
-            <div class="kpi-value">24h</div>
-            <div class="kpi-label">Tiempo de respuesta</div>
-          </div>
-          <div class="kpi-card">
-            <div class="kpi-value">15+</div>
-            <div class="kpi-label">Años de experiencia</div>
-          </div>
-        </div>
+    <!-- KPIs -->
+    <section class="kpis reveal">
+      <div class="container kpis-grid">
+        <div class="kpi-card"><div class="kpi-value">$150MM+</div><div class="kpi-label">Financiamiento mensual</div></div>
+        <div class="kpi-card"><div class="kpi-value">24h</div><div class="kpi-label">Tiempo de respuesta</div></div>
+        <div class="kpi-card"><div class="kpi-value">15+</div><div class="kpi-label">Años de experiencia</div></div>
       </div>
     </section>
-
 
     <!-- Servicios -->
-    <section id="servicios" class="services reveal" aria-labelledby="services-title">
+    <section id="servicios" class="services reveal">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">Qué hacemos</p>
-          <h2 id="services-title">Soluciones de factoring</h2>
-          <p class="section-subtitle">Liquidez para tu empresa con un proceso simple y transparente.</p>
+          <h2>Soluciones de factoring</h2>
         </header>
         <div class="services-grid">
-          <article class="service-card">
-            <div class="service-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-            <h3>Anticipo de facturas</h3>
-            <p>Convierte tus cuentas por cobrar en efectivo inmediato.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="fa-solid fa-user-shield"></i></div>
-            <h3>Factoring sin recurso</h3>
-            <p>Transfiere el riesgo de incobrabilidad y mejora tu flujo de caja.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon"><i class="fa-solid fa-laptop"></i></div>
-            <h3>Plataforma digital</h3>
-            <p>Operaciones 100% online con firma electrónica avanzada.</p>
-          </article>
+          <article class="service-card"><i class="fa-solid fa-file-invoice-dollar"></i><h3>Anticipo de facturas</h3></article>
+          <article class="service-card"><i class="fa-solid fa-user-shield"></i><h3>Factoring sin recurso</h3></article>
+          <article class="service-card"><i class="fa-solid fa-laptop"></i><h3>Plataforma digital</h3></article>
         </div>
       </div>
     </section>
 
-    <!-- Proceso -->
-    <section id="proceso" class="process reveal" aria-labelledby="process-title">
+    <!-- Nosotros -->
+    <section id="nosotros" class="about reveal">
       <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Cómo funciona</p>
-          <h2 id="process-title">Proceso en 3 pasos</h2>
-        </header>
-        <div class="process-grid">
-          <article class="process-step">
-            <div class="step-num">1</div>
-            <h3>Envía tus facturas</h3>
-            <p>Carga tus documentos en nuestra plataforma segura.</p>
-          </article>
-          <article class="process-step">
-            <div class="step-num">2</div>
-            <h3>Evaluación y oferta</h3>
-            <p>Revisamos y te enviamos condiciones competitivas.</p>
-          </article>
-          <article class="process-step">
-            <div class="step-num">3</div>
-            <h3>Recibes hoy</h3>
-            <p>Transferimos a tu cuenta y te acompañamos en el proceso.</p>
-          </article>
+        <h2>ACF CAPITAL S.A.</h2>
+        <p>Compañía fundada en 2005, con más de US$7.000 millones en operaciones y más de 4.000 empresas atendidas. Clasificación de riesgo: Grado de Inversión (Fitch & Humphreys).</p>
+      </div>
+    </section>
+
+    <!-- Ventajas -->
+    <section id="ventajas" class="benefits reveal">
+      <div class="container">
+        <h2>Nuestras ventajas</h2>
+        <ul>
+          <li>Liquidación diaria de excedentes</li>
+          <li>Facturas digitalizadas y acceso histórico</li>
+          <li>Estado en línea de cobranza y operaciones</li>
+          <li>Cartola semanal con cobranza y saldos</li>
+          <li>Alertas diarias de transferencias y protestos</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="products reveal">
+      <div class="container">
+        <h2>Productos y servicios</h2>
+        <div class="products-grid">
+          <div class="product-item"><i class="fa-solid fa-file-invoice"></i> Facturas</div>
+          <div class="product-item"><i class="fa-solid fa-money-check-dollar"></i> Cheques</div>
+          <div class="product-item"><i class="fa-solid fa-file-signature"></i> Pagarés</div>
+          <div class="product-item"><i class="fa-solid fa-file-lines"></i> Letras</div>
+          <div class="product-item"><i class="fa-solid fa-file-contract"></i> Contratos</div>
+          <div class="product-item"><i class="fa-solid fa-scale-balanced"></i> Saldos de precio</div>
+          <div class="product-item"><i class="fa-solid fa-hand-holding-dollar"></i> Cobranza</div>
         </div>
+      </div>
+    </section>
+
+    <!-- Requisitos -->
+    <section id="requisitos" class="requirements reveal">
+      <div class="container">
+        <h2>Requisitos</h2>
+        <div class="req-grid">
+          <div><h3>Financieros</h3><ul><li>Estados financieros últimos 2 años</li><li>IVA últimos 24 meses</li><li>Declaración de renta</li></ul></div>
+          <div><h3>Legales</h3><ul><li>Constitución de sociedad</li><li>Poderes y modificaciones</li><li>Publicación en Diario Oficial</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preguntas -->
+    <section id="preguntas" class="faq reveal">
+      <div class="container">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq-item"><button class="faq-q">¿Qué información necesito?</button><div class="faq-a">Formulario de evaluación + documentación financiera y legal.</div></div>
+        <div class="faq-item"><button class="faq-q">¿Cuánto se demora?</button><div class="faq-a">Con margen aprobado y contrato marco, en el mismo día.</div></div>
+        <div class="faq-item"><button class="faq-q">¿Cómo se notifica a los deudores?</button><div class="faq-a">ACF notifica la cesión y gestiona la cobranza.</div></div>
       </div>
     </section>
 
     <!-- Simulador -->
-    <section id="simulador" class="calculator calculator-v2 reveal" aria-labelledby="calc-title">
+    <section id="simulador" class="calculator reveal">
       <div class="container">
-        <div class="calculator-header">
-          <p class="calculator-tagline">Simulador de factoring</p>
-          <h2 id="calc-title">Calcula tu financiamiento</h2>
-          <p class="calculator-subtitle">Ingresa el monto y el plazo. Te mostramos cuánto recibes hoy.</p>
-        </div>
-
-        <div class="calc-v2">
-          <section class="calc-v2-form" aria-label="Parámetros">
-            <div class="cv2-field">
-              <label for="cv2Amount" class="cv2-label">Monto a financiar</label>
-              <div class="cv2-inputwrap">
-                <span class="cv2-currency" aria-hidden="true">$</span>
-                <input id="cv2Amount" class="cv2-input" type="text" value="1.000.000" aria-describedby="cv2AmountHelp" required />
-              </div>
-              <div id="cv2AmountHelp" class="cv2-help">Ingresa el total a financiar en pesos chilenos.</div>
-
-              <div class="cv2-presets" role="group" aria-label="Montos sugeridos">
-                <button type="button" class="cv2-chip" data-value="500000">$500K</button>
-                <button type="button" class="cv2-chip" data-value="1000000">$1M</button>
-                <button type="button" class="cv2-chip" data-value="5000000">$5M</button>
-                <button type="button" class="cv2-chip" data-value="10000000">$10M</button>
-              </div>
-            </div>
-
-            <div class="cv2-field">
-              <span class="cv2-label">Plazo de pago</span>
-              <div class="cv2-segment" role="group" aria-label="Plazo en días" id="cv2TermGroup">
-                <button type="button" class="cv2-segbtn is-active" data-days="30" aria-pressed="true">30</button>
-                <button type="button" class="cv2-segbtn" data-days="60" aria-pressed="false">60</button>
-                <button type="button" class="cv2-segbtn" data-days="90" aria-pressed="false">90</button>
-                <button type="button" class="cv2-segbtn" data-days="120" aria-pressed="false">120</button>
-                <button type="button" class="cv2-segbtn" data-days="150" aria-pressed="false">150</button>
-              </div>
-            </div>
-
-            <div class="cv2-field">
-              <label for="cv2Rate" class="cv2-label">Tasa referencial mensual</label>
-              <div class="cv2-rate-inline">
-                <input id="cv2Rate" class="cv2-slider" type="range" min="1" max="4.5" step="0.1" value="1" />
-                <div class="cv2-ratebox">
-                  <input id="cv2RateInput" type="number" min="1" max="4.5" step="0.1" value="1" aria-label="Tasa mensual" />
-                  <span id="cv2RateDisplay" class="cv2-rate-display">1,0%</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="cv2-field">
-              <span class="cv2-label">Gastos operacionales</span>
-              <div class="cv2-segment" role="group" aria-label="Gasto fijo" id="cv2FeeGroup">
-                <button type="button" class="cv2-segbtn is-active" data-fee="15000" aria-pressed="true">$15.000</button>
-                <button type="button" class="cv2-segbtn" data-fee="25000" aria-pressed="false">$25.000</button>
-                <button type="button" class="cv2-segbtn" data-fee="40000" aria-pressed="false">$40.000</button>
-              </div>
-            </div>
-          </section>
-
-          <section class="calc-v2-result" aria-label="Resultado">
-            <div class="cv2-box">
-              <div class="cv2-row"><span>Monto a financiar</span><strong id="cv2AmountOut">$0</strong></div>
-              <div class="cv2-row"><span>Plazo</span><strong id="cv2Days">30 días</strong></div>
-              <div class="cv2-row"><span>Tasa mensual</span><strong id="cv2RateOut">1,0%</strong></div>
-              <div class="cv2-row"><span>Gastos operacionales</span><strong id="cv2Fee">$15.000</strong></div>
-              <div class="cv2-row"><span>Comisión de factoring</span><strong id="cv2Discount">$0</strong></div>
-            </div>
-            <div class="cv2-payout">
-              <div class="cv2-payout-label">Recibes hoy*</div>
-              <div class="cv2-payout-amount" id="cv2Net">$0</div>
-            </div>
-            <button class="btn btn-primary cv2-cta" id="cv2CTA">
-              <i class="fa-solid fa-phone" aria-hidden="true"></i>
-              Solicitar financiamiento
-            </button>
-            <button class="cv2-disclosure" id="cv2ToggleDetail" aria-expanded="false" aria-controls="cv2Detail">
-              Ver detalle <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-            </button>
-            <div id="cv2Detail" class="cv2-detail" hidden>
-              <div class="cv2-row"><span>Monto a financiar</span><strong id="cv2AmountOut2">$0</strong></div>
-              <div class="cv2-row"><span>Financiamiento (100%)</span><strong id="cv2Financed">$0</strong></div>
-              <div class="cv2-row"><span>Comisión de factoring</span><strong id="cv2Discount2">$0</strong></div>
-              <div class="cv2-row"><span>Gastos operacionales</span><strong id="cv2Fee2">$0</strong></div>
-            </div>
-            <p class="cv2-note">* Cálculo referencial. Tasas, comisiones y gastos sujetos a evaluación.</p>
-          </section>
-        </div>
+        <h2>Simulador de factoring</h2>
+        <p>Ingresa el monto y plazo. Calculamos cuánto recibes hoy.</p>
+        <div id="simuladorApp"></div>
       </div>
     </section>
 
     <!-- Oficinas -->
-    <section id="oficinas" class="offices reveal" aria-labelledby="offices-title">
+    <section id="oficinas" class="offices reveal">
       <div class="container">
-        <h2 id="offices-title">Nuestras oficinas</h2>
-        <div class="offices-grid">
-          <article class="office-card">
-            <h3 class="office-title">Santiago</h3>
-            <address class="office-address">Rosario Norte 532, Las Condes</address>
-            <div class="office-contact"><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+56223389400">+56 2 2338 9400</a></div>
-          </article>
-          <article class="office-card">
-            <h3 class="office-title">Viña del Mar</h3>
-            <address class="office-address">1 Norte 123, Viña del Mar</address>
-            <div class="office-contact"><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:contacto@acfcapital.cl">contacto@acfcapital.cl</a></div>
-          </article>
-          <article class="office-card">
-            <h3 class="office-title">Puerto Montt</h3>
-            <address class="office-address">Benavente 550, Oficina 503, Puerto Montt</address>
-            <div class="office-contact"><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+56652348910">+56 65 2348 910</a></div>
-          </article>
-        </div>
+        <h2>Nuestras oficinas</h2>
+        <p><i class="fa-solid fa-location-dot"></i> Av. Apoquindo 4775, Piso 12, Las Condes, Santiago</p>
+        <p><i class="fa-solid fa-phone"></i> +56 2 1234 5678</p>
+        <p><i class="fa-solid fa-envelope"></i> contacto@acfcapital.cl</p>
       </div>
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="contact reveal" aria-labelledby="contact-title">
-      <div class="container contact-grid">
-        <div class="contact-left">
-          <h2 id="contact-title">Contáctanos</h2>
-          <p class="contact-subtitle">Nuestro equipo está listo para ayudarte a encontrar la mejor solución de financiamiento.</p>
-          <form class="contact-form" id="contactForm" aria-label="Formulario de contacto" novalidate>
-            <div class="input-group">
-              <label for="contactName" class="input-label">Nombre completo *</label>
-              <input type="text" id="contactName" class="form-input" required aria-required="true" autocomplete="name" />
-            </div>
-            <div class="input-row">
-              <div class="input-group">
-                <label for="contactRut" class="input-label">RUT *</label>
-                <input type="text" id="contactRut" class="form-input" required aria-required="true" inputmode="text" />
-              </div>
-              <div class="input-group">
-                <label for="contactPhone" class="input-label">Teléfono *</label>
-                <input type="tel" id="contactPhone" class="form-input" required aria-required="true" autocomplete="tel" />
-              </div>
-            </div>
-            <div class="input-group">
-              <label for="contactEmail" class="input-label">Email *</label>
-              <input type="email" id="contactEmail" class="form-input" required aria-required="true" autocomplete="email" />
-            </div>
-            <div class="input-group">
-              <label for="contactMessage" class="input-label">Mensaje</label>
-              <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="Cuéntanos tus necesidades de financiamiento..."></textarea>
-            </div>
-            <label class="checkbox">
-              <input type="checkbox" id="contactConsent" />
-              <span>Acepto ser contactad@ por ACF Capital</span>
-            </label>
-            <button type="submit" class="btn btn-primary btn-block">
-              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-              Enviar
-            </button>
-            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-        <div class="contact-right">
-          <div class="contact-box">
-            <h3>¿Buscas trabajo?</h3>
-            <p>Envíanos tu CV y forma parte de nuestro equipo.</p>
-            <a href="mailto:rrhh@acfcapital.cl" class="btn btn-secondary">
-              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-              Enviar CV
-            </a>
-          </div>
-        </div>
+    <section id="contacto" class="contact reveal">
+      <div class="container">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+          <input type="text" placeholder="Nombre" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="RUT" required />
+          <textarea placeholder="Mensaje" required></textarea>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>ACF Capital</h3>
-          <p>Más de 15 años proporcionando soluciones de factoring ágiles y confiables para empresas de todos los tamaños en Chile.</p>
-        </div>
-        <div class="footer-section">
-          <h4>Servicios</h4>
-          <ul class="footer-links">
-            <li><a href="#servicios">Anticipo de facturas</a></li>
-            <li><a href="#servicios">Gestión de cobranza</a></li>
-            <li><a href="#servicios">Plataforma digital</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Empresa</h4>
-          <ul class="footer-links">
-            <li><a href="#proceso">Cómo funciona</a></li>
-            <li><a href="#oficinas">Oficinas</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 ACF Capital. Todos los derechos reservados.</p>
-        <nav class="footer-legal" aria-label="Enlaces legales">
-          <a href="/privacidad">Privacidad</a>
-          <a href="/terminos">Términos</a>
-          <a href="/sitemap.xml">Mapa del sitio</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Login Modal -->
-  <div id="loginModal" class="modal" role="dialog" aria-labelledby="login-title" aria-modal="true" hidden>
-    <div class="modal__backdrop" data-dismiss="modal"></div>
-    <div class="modal__panel" role="document">
-      <button id="loginClose" class="modal__close" aria-label="Cerrar ventana de acceso" data-dismiss="modal">
-        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-      </button>
-      <form id="loginForm" class="login-form" aria-label="Formulario de acceso clientes" novalidate>
-        <h3 id="login-title">Acceso clientes</h3>
-        <div class="input-group">
-          <label for="loginUser" class="input-label">RUT</label>
-          <input type="text" id="loginUser" class="form-input" required aria-required="true" autocomplete="username" inputmode="text" />
-          <div id="rutError" class="sr-only" aria-live="assertive"></div>
-        </div>
-        <div class="input-group">
-          <label for="loginPass" class="input-label">Contraseña</label>
-          <input type="password" id="loginPass" class="form-input" required aria-required="true" autocomplete="current-password" />
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">
-          <i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i>
-          Ingresar
-        </button>
-        <a href="/recuperar-clave" class="forgot-link">¿Olvidaste tu contraseña?</a>
+  <!-- Modal Login -->
+  <div id="loginModal" class="modal" hidden>
+    <div class="modal__backdrop"></div>
+    <div class="modal__panel">
+      <button class="modal__close" id="loginClose"><i class="fa-solid fa-xmark"></i></button>
+      <h2>Acceso Clientes</h2>
+      <form id="loginForm">
+        <label>RUT</label>
+        <input type="text" id="loginUser" required />
+        <button type="submit" class="btn btn-primary">Ingresar</button>
       </form>
     </div>
   </div>
-
-  <!-- Toast -->
-  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
-
-  <!-- JSON-LD -->
-  <script type="application/ld+json" nonce="abc123">
-  {
-    "@context": "https://schema.org",
-    "@type": "FinancialService",
-    "name": "ACF Capital",
-    "url": "https://www.acfcapital.cl",
-    "logo": "https://www.acfcapital.cl/acfcapital/images/logo_acf.svg",
-    "areaServed": "CL",
-    "serviceType": ["Factoring", "Factoring confidencial"]
-  }
-  </script>
 
   <script src="./app.js" nonce="abc123" defer></script>
 </body>
