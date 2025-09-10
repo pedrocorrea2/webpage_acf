@@ -21,27 +21,24 @@ a { text-decoration:none; color:inherit; }
   .nav.open{ transform:translateX(0); }
   .nav-toggle{ display:block; }
 }
-.hero { position:relative; padding:6rem 1rem; text-align:left; color:#fff; overflow:hidden; }
+.hero { position:relative; padding:6rem 1rem; text-align:center; color:#fff; min-height:100vh; display:flex; align-items:center; }
 .hero__bg { position:absolute; inset:0; background-size:cover; background-position:center; opacity:0; transition:opacity 1s; }
 .hero__bg.is-active { opacity:1; }
 .hero__overlay { position:absolute; inset:0; background:rgba(0,0,0,.5); }
-.hero h1 { font-size:2.5rem; }
-.hero__cta { margin:1rem 0; display:flex; flex-wrap:wrap; gap:.5rem; }
+.hero__content { position:relative; z-index:2; max-width:600px; margin:auto; }
+.hero h1 { font-size:2.8rem; }
+.hero__cta { margin:1rem 0; display:flex; flex-wrap:wrap; justify-content:center; gap:.5rem; }
+.hero__proof { margin-top:1rem; font-size:1.1rem; color:var(--primary); }
 .kpis-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; margin:2rem 0; }
-.kpi-card { background:#0a1422; padding:1rem; border-radius:10px; text-align:center; }
-.services-grid,.products-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
-.service-card,.product-item { background:#0a1422; padding:1rem; border-radius:10px; text-align:center; }
-.benefits ul { list-style:none; padding:0; }
+.kpi-card { background:#0a1422; padding:1.5rem; border-radius:10px; text-align:center; font-size:1.2rem; }
+.kpi-value { font-size:1.6rem; font-weight:700; display:block; margin-bottom:.5rem; }
+.services-grid,.process-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.5rem; }
+.service-card,.process-step { background:#0a1422; padding:1.5rem; border-radius:10px; text-align:center; }
+.benefits ul { list-style:none; padding:0; text-align:center; }
+.benefits li { margin:.5rem 0; }
 .benefits li::before { content:"✓ "; color:var(--primary); }
-.req-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
-.faq-item { margin:.5rem 0; }
-.faq-q { width:100%; text-align:left; background:#0a1422; color:#fff; padding:.5rem; border:none; border-radius:6px; cursor:pointer; }
-.faq-a { display:none; padding:.5rem; background:#0a1422; border-radius:6px; }
-.faq-item.active .faq-a { display:block; }
 .contact form { display:grid; gap:.5rem; }
 .contact input,.contact textarea { padding:.6rem; border-radius:6px; border:none; }
-.contact input:invalid,.contact textarea:invalid { border:2px solid red; }
-.contact input:valid,.contact textarea:valid { border:2px solid green; }
 .modal { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; z-index:2000; }
 .modal[hidden] { display:none !important; }
 .modal__backdrop { position:absolute; inset:0; background:rgba(0,0,0,.6); }

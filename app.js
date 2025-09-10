@@ -41,15 +41,6 @@ if(loginModal){loginModal.addEventListener('click',(e)=>{if(e.target.classList.c
 document.addEventListener('keydown',(e)=>{if(e.key==="Escape"&&!loginModal.hidden) closeModal();});
 function closeModal(){ loginModal.hidden=true; document.body.classList.remove('no-scroll'); }
 
-// FAQ accordion
-document.querySelectorAll('.faq-q').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const expanded=btn.getAttribute('aria-expanded')==="true";
-    btn.setAttribute('aria-expanded',!expanded);
-    btn.parentElement.classList.toggle('active');
-  });
-});
-
 // Contact form validation
 const contactForm=document.getElementById('contactForm');
 if(contactForm){

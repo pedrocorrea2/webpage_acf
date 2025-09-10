@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ACF Capital — Factoring Empresarial | Liquidez Inmediata</title>
-  <meta name="description" content="ACF CAPITAL S.A. financia a empresas mediante el anticipo de cuentas por cobrar. Respuesta en 24 horas, proceso 100% digital y tasas competitivas." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <title>ACF Capital — Factoring Empresarial</title>
+  <meta name="description" content="Liquidez inmediata para tu empresa. Factoring digital, aprobación en 24h, tasas competitivas.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -16,16 +14,13 @@
   <header class="header">
     <div class="container header-content">
       <a href="#top" class="logo-link">
-        <img src="https://www.acfcapital.cl/acfcapital/images/logo_acf.svg" alt="ACF Capital" class="logo" width="176" height="40" />
+        <img src="https://www.acfcapital.cl/acfcapital/images/logo_acf.svg" alt="ACF Capital" width="160" />
       </a>
-      <button id="navToggle" class="nav-toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
-      <nav id="nav" class="nav" aria-label="Menú principal">
+      <button id="navToggle" class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+      <nav id="nav" class="nav">
         <a href="#servicios">Servicios</a>
-        <a href="#nosotros">Nosotros</a>
+        <a href="#proceso">Proceso</a>
         <a href="#ventajas">Ventajas</a>
-        <a href="#productos">Productos</a>
-        <a href="#requisitos">Requisitos</a>
-        <a href="#preguntas">Preguntas</a>
         <a href="#simulador">Simulador</a>
         <a href="#oficinas">Oficinas</a>
         <a href="#contacto">Contacto</a>
@@ -42,21 +37,14 @@
       "https://www.acfcapital.cl/acfcapital/images/fondo_b.jpg"
     ]'>
       <div class="hero__overlay"></div>
-      <div class="container hero__grid">
-        <div>
-          <span class="hero__badge">Financiamiento ágil</span>
-          <h1>Factoring empresarial con <span class="txt-grad">liquidez inmediata</span></h1>
-          <p>Anticipa tus facturas y recibe hoy. Proceso 100% digital y tasas competitivas.</p>
-          <div class="hero__cta">
-            <a class="btn btn-primary" href="#simulador"><i class="fa-solid fa-calculator"></i> Calcular ahora</a>
-            <a class="btn btn-secondary" href="#contacto"><i class="fa-solid fa-phone"></i> Hablar con un asesor</a>
-          </div>
-          <ul class="hero__bullets">
-            <li><i class="fa-solid fa-check"></i> Respuesta en 24 horas</li>
-            <li><i class="fa-solid fa-check"></i> Plataforma digital segura</li>
-            <li><i class="fa-solid fa-check"></i> Para pymes y empresas</li>
-          </ul>
+      <div class="container hero__content">
+        <h1>Liquidez inmediata para tu empresa</h1>
+        <p>Financia tus facturas con aprobación en 24h y un proceso 100% digital.</p>
+        <div class="hero__cta">
+          <a href="#simulador" class="btn btn-primary">Simular ahora</a>
+          <a href="#contacto" class="btn btn-secondary">Hablar con un asesor</a>
         </div>
+        <div class="hero__proof">+4.000 empresas confían en nosotros</div>
       </div>
       <div class="hero__bg is-active"></div>
       <div class="hero__bg"></div>
@@ -65,80 +53,47 @@
     <!-- KPIs -->
     <section class="kpis reveal">
       <div class="container kpis-grid">
-        <div class="kpi-card"><div class="kpi-value">$150MM+</div><div class="kpi-label">Financiamiento mensual</div></div>
-        <div class="kpi-card"><div class="kpi-value">24h</div><div class="kpi-label">Tiempo de respuesta</div></div>
-        <div class="kpi-card"><div class="kpi-value">15+</div><div class="kpi-label">Años de experiencia</div></div>
+        <div class="kpi-card"><span class="kpi-value">US$7.000M+</span><span>Operados</span></div>
+        <div class="kpi-card"><span class="kpi-value">4.000+</span><span>Empresas</span></div>
+        <div class="kpi-card"><span class="kpi-value"><24h</span><span>Aprobación</span></div>
       </div>
     </section>
 
     <!-- Servicios -->
     <section id="servicios" class="services reveal">
       <div class="container">
-        <h2>Soluciones de factoring</h2>
+        <h2>Soluciones financieras</h2>
         <div class="services-grid">
-          <div class="service-card"><i class="fa-solid fa-file-invoice-dollar"></i><h3>Anticipo de facturas</h3></div>
-          <div class="service-card"><i class="fa-solid fa-user-shield"></i><h3>Factoring sin recurso</h3></div>
-          <div class="service-card"><i class="fa-solid fa-laptop"></i><h3>Plataforma digital</h3></div>
+          <div class="service-card"><i class="fa-solid fa-file-invoice-dollar"></i><h3>Factoring</h3><p>Anticipa tus facturas y recibe liquidez inmediata.</p></div>
+          <div class="service-card"><i class="fa-solid fa-hand-holding-dollar"></i><h3>Confirming</h3><p>Optimiza tu capital de trabajo y fortalece tu cadena de pago.</p></div>
+          <div class="service-card"><i class="fa-solid fa-scale-balanced"></i><h3>Cobranza</h3><p>Gestión eficiente de documentos y cuentas por cobrar.</p></div>
+          <div class="service-card"><i class="fa-solid fa-money-check-dollar"></i><h3>Pagarés / Cheques</h3><p>Obtén liquidez inmediata con respaldo legal.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- Nosotros -->
-    <section id="nosotros" class="about reveal">
+    <!-- Proceso -->
+    <section id="proceso" class="process reveal">
       <div class="container">
-        <h2>ACF CAPITAL S.A.</h2>
-        <p>Fundada en 2005, con más de US$7.000 millones en operaciones y 4.000 empresas atendidas. Clasificación de riesgo: Grado de Inversión (Fitch & Humphreys).</p>
+        <h2>Cómo funciona</h2>
+        <div class="process-grid">
+          <div class="process-step"><i class="fa-solid fa-upload"></i><h3>1. Envía tus facturas</h3><p>Sube tus documentos en nuestra plataforma digital.</p></div>
+          <div class="process-step"><i class="fa-solid fa-magnifying-glass"></i><h3>2. Evaluación en línea</h3><p>Revisamos tu información en menos de 24h.</p></div>
+          <div class="process-step"><i class="fa-solid fa-bolt"></i><h3>3. Liquidez inmediata</h3><p>Recibe el dinero en tu cuenta el mismo día.</p></div>
+        </div>
       </div>
     </section>
 
     <!-- Ventajas -->
     <section id="ventajas" class="benefits reveal">
       <div class="container">
-        <h2>Nuestras ventajas</h2>
+        <h2>Ventajas competitivas</h2>
         <ul>
-          <li>Liquidación diaria de excedentes</li>
-          <li>Facturas digitalizadas y acceso histórico</li>
-          <li>Estado en línea de cobranza</li>
-          <li>Cartola semanal con saldos y cobranzas</li>
-          <li>Alertas diarias de transferencias y protestos</li>
+          <li>Proceso 100% digital</li>
+          <li>Tasas competitivas</li>
+          <li>Respaldo sólido y seguro</li>
+          <li>Soporte personalizado</li>
         </ul>
-      </div>
-    </section>
-
-    <!-- Productos -->
-    <section id="productos" class="products reveal">
-      <div class="container">
-        <h2>Productos y servicios</h2>
-        <div class="products-grid">
-          <div class="product-item"><i class="fa-solid fa-file-invoice"></i> Facturas</div>
-          <div class="product-item"><i class="fa-solid fa-money-check-dollar"></i> Cheques</div>
-          <div class="product-item"><i class="fa-solid fa-file-signature"></i> Pagarés</div>
-          <div class="product-item"><i class="fa-solid fa-file-lines"></i> Letras</div>
-          <div class="product-item"><i class="fa-solid fa-file-contract"></i> Contratos</div>
-          <div class="product-item"><i class="fa-solid fa-scale-balanced"></i> Saldos de precio</div>
-          <div class="product-item"><i class="fa-solid fa-hand-holding-dollar"></i> Cobranza</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Requisitos -->
-    <section id="requisitos" class="requirements reveal">
-      <div class="container">
-        <h2>Requisitos</h2>
-        <div class="req-grid">
-          <div><h3>Financieros</h3><ul><li>Estados financieros últimos 2 años</li><li>IVA últimos 24 meses</li><li>Declaración de renta</li></ul></div>
-          <div><h3>Legales</h3><ul><li>Constitución de sociedad</li><li>Poderes y modificaciones</li><li>Publicación en Diario Oficial</li></ul></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Preguntas -->
-    <section id="preguntas" class="faq reveal">
-      <div class="container">
-        <h2>Preguntas frecuentes</h2>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">¿Qué información necesito?</button><div class="faq-a">Formulario de evaluación + documentación financiera y legal.</div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">¿Cuánto se demora?</button><div class="faq-a">Con margen aprobado y contrato marco, en el mismo día.</div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">¿Cómo se notifica a los deudores?</button><div class="faq-a">ACF notifica la cesión y gestiona la cobranza.</div></div>
       </div>
     </section>
 
@@ -190,6 +145,7 @@
     </div>
   </div>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 ACF Capital S.A. — Todos los derechos reservados.</p>
