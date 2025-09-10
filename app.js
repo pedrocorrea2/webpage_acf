@@ -5,17 +5,16 @@ class HeroPro {
     this.images = JSON.parse(section.getAttribute('data-images'));
     this.bgs = section.querySelectorAll('.hero__bg');
     this.idx = 0;
-    this.cycle();
-    setInterval(()=>this.cycle(),5000);
+    this.update();
+    setInterval(()=>this.next(),7000);
   }
-  cycle() {
-    this.idx = (this.idx+1)%this.images.length;
+  update(){
     this.bgs.forEach((bg,i)=>{
       bg.style.backgroundImage=`url(${this.images[(this.idx+i)%this.images.length]})`;
+      bg.classList.toggle('is-active',i===0);
     });
-    this.bgs.forEach((bg,i)=>bg.classList.toggle('is-active',i===0));
-    this.section.append(...this.bgs);
   }
+  next(){ this.idx=(this.idx+1)%this.images.length; this.update(); }
 }
 document.addEventListener('DOMContentLoaded',()=>{
   const hero=document.querySelector('.hero--pro');
@@ -25,11 +24,11 @@ document.addEventListener('DOMContentLoaded',()=>{
 // Nav mobile
 const navToggle=document.getElementById('navToggle');
 const nav=document.getElementById('nav');
-if(navToggle){navToggle.addEventListener('click',()=>{nav.classList.toggle('open');});}
+if(navToggle){navToggle.addEventListener('click',()=>nav.classList.toggle('open'));}
 
 // Reveal on scroll
 const reveals=document.querySelectorAll('.reveal');
-const revealObs=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}));
+const revealObs=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible'); revealObs.unobserve(e.target);}}),{threshold:.1});
 reveals.forEach(r=>revealObs.observe(r));
 
 // Modal login
@@ -37,12 +36,27 @@ const loginToggle=document.getElementById('loginToggle');
 const loginModal=document.getElementById('loginModal');
 const loginClose=document.getElementById('loginClose');
 if(loginToggle){loginToggle.addEventListener('click',()=>{loginModal.hidden=false; document.body.classList.add('no-scroll');});}
-if(loginClose){loginClose.addEventListener('click',()=>{loginModal.hidden=true; document.body.classList.remove('no-scroll');});}
-loginModal?.addEventListener('click',(e)=>{if(e.target.classList.contains('modal__backdrop')){loginModal.hidden=true; document.body.classList.remove('no-scroll');}});
+if(loginClose){loginClose.addEventListener('click',()=>closeModal());}
+if(loginModal){loginModal.addEventListener('click',(e)=>{if(e.target.classList.contains('modal__backdrop')) closeModal();});}
+document.addEventListener('keydown',(e)=>{if(e.key==="Escape"&&!loginModal.hidden) closeModal();});
+function closeModal(){ loginModal.hidden=true; document.body.classList.remove('no-scroll'); }
 
-// FAQ toggle
+// FAQ accordion
 document.querySelectorAll('.faq-q').forEach(btn=>{
   btn.addEventListener('click',()=>{
+    const expanded=btn.getAttribute('aria-expanded')==="true";
+    btn.setAttribute('aria-expanded',!expanded);
     btn.parentElement.classList.toggle('active');
   });
 });
+
+// Contact form validation
+const contactForm=document.getElementById('contactForm');
+if(contactForm){
+  contactForm.addEventListener('submit',(e)=>{
+    if(!contactForm.checkValidity()){
+      e.preventDefault();
+      alert("Por favor completa todos los campos correctamente.");
+    }
+  });
+}

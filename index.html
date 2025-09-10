@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#1e3a5f" />
   <title>ACF Capital — Factoring Empresarial | Liquidez Inmediata</title>
   <meta name="description" content="ACF CAPITAL S.A. financia a empresas mediante el anticipo de cuentas por cobrar. Respuesta en 24 horas, proceso 100% digital y tasas competitivas." />
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -15,13 +15,11 @@
   <!-- Header -->
   <header class="header">
     <div class="container header-content">
-      <a class="logo-link" href="#top">
+      <a href="#top" class="logo-link">
         <img src="https://www.acfcapital.cl/acfcapital/images/logo_acf.svg" alt="ACF Capital" class="logo" width="176" height="40" />
       </a>
-      <button id="navToggle" class="nav-toggle" aria-label="Abrir/cerrar menú" aria-expanded="false">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <nav id="nav" class="nav">
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+      <nav id="nav" class="nav" aria-label="Menú principal">
         <a href="#servicios">Servicios</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#ventajas">Ventajas</a>
@@ -32,11 +30,7 @@
         <a href="#oficinas">Oficinas</a>
         <a href="#contacto">Contacto</a>
       </nav>
-      <div class="nav-actions">
-        <button class="btn btn-primary" id="loginToggle">
-          <i class="fa-solid fa-user"></i> Acceso clientes
-        </button>
-      </div>
+      <button class="btn btn-primary" id="loginToggle"><i class="fa-solid fa-user"></i> Acceso clientes</button>
     </div>
   </header>
 
@@ -49,10 +43,10 @@
     ]'>
       <div class="hero__overlay"></div>
       <div class="container hero__grid">
-        <div class="hero__left">
-          <div class="hero__badge">Financiamiento ágil</div>
-          <h1 class="hero__title">Factoring empresarial con <span class="txt-grad">liquidez inmediata</span></h1>
-          <p class="hero__subtitle">Anticipa tus facturas y recibe hoy. Proceso 100% digital y tasas competitivas.</p>
+        <div>
+          <span class="hero__badge">Financiamiento ágil</span>
+          <h1>Factoring empresarial con <span class="txt-grad">liquidez inmediata</span></h1>
+          <p>Anticipa tus facturas y recibe hoy. Proceso 100% digital y tasas competitivas.</p>
           <div class="hero__cta">
             <a class="btn btn-primary" href="#simulador"><i class="fa-solid fa-calculator"></i> Calcular ahora</a>
             <a class="btn btn-secondary" href="#contacto"><i class="fa-solid fa-phone"></i> Hablar con un asesor</a>
@@ -80,13 +74,11 @@
     <!-- Servicios -->
     <section id="servicios" class="services reveal">
       <div class="container">
-        <header class="section-head">
-          <h2>Soluciones de factoring</h2>
-        </header>
+        <h2>Soluciones de factoring</h2>
         <div class="services-grid">
-          <article class="service-card"><i class="fa-solid fa-file-invoice-dollar"></i><h3>Anticipo de facturas</h3></article>
-          <article class="service-card"><i class="fa-solid fa-user-shield"></i><h3>Factoring sin recurso</h3></article>
-          <article class="service-card"><i class="fa-solid fa-laptop"></i><h3>Plataforma digital</h3></article>
+          <div class="service-card"><i class="fa-solid fa-file-invoice-dollar"></i><h3>Anticipo de facturas</h3></div>
+          <div class="service-card"><i class="fa-solid fa-user-shield"></i><h3>Factoring sin recurso</h3></div>
+          <div class="service-card"><i class="fa-solid fa-laptop"></i><h3>Plataforma digital</h3></div>
         </div>
       </div>
     </section>
@@ -95,7 +87,7 @@
     <section id="nosotros" class="about reveal">
       <div class="container">
         <h2>ACF CAPITAL S.A.</h2>
-        <p>Compañía fundada en 2005, con más de US$7.000 millones en operaciones y más de 4.000 empresas atendidas. Clasificación de riesgo: Grado de Inversión (Fitch & Humphreys).</p>
+        <p>Fundada en 2005, con más de US$7.000 millones en operaciones y 4.000 empresas atendidas. Clasificación de riesgo: Grado de Inversión (Fitch & Humphreys).</p>
       </div>
     </section>
 
@@ -106,8 +98,8 @@
         <ul>
           <li>Liquidación diaria de excedentes</li>
           <li>Facturas digitalizadas y acceso histórico</li>
-          <li>Estado en línea de cobranza y operaciones</li>
-          <li>Cartola semanal con cobranza y saldos</li>
+          <li>Estado en línea de cobranza</li>
+          <li>Cartola semanal con saldos y cobranzas</li>
           <li>Alertas diarias de transferencias y protestos</li>
         </ul>
       </div>
@@ -144,9 +136,9 @@
     <section id="preguntas" class="faq reveal">
       <div class="container">
         <h2>Preguntas frecuentes</h2>
-        <div class="faq-item"><button class="faq-q">¿Qué información necesito?</button><div class="faq-a">Formulario de evaluación + documentación financiera y legal.</div></div>
-        <div class="faq-item"><button class="faq-q">¿Cuánto se demora?</button><div class="faq-a">Con margen aprobado y contrato marco, en el mismo día.</div></div>
-        <div class="faq-item"><button class="faq-q">¿Cómo se notifica a los deudores?</button><div class="faq-a">ACF notifica la cesión y gestiona la cobranza.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">¿Qué información necesito?</button><div class="faq-a">Formulario de evaluación + documentación financiera y legal.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">¿Cuánto se demora?</button><div class="faq-a">Con margen aprobado y contrato marco, en el mismo día.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">¿Cómo se notifica a los deudores?</button><div class="faq-a">ACF notifica la cesión y gestiona la cobranza.</div></div>
       </div>
     </section>
 
@@ -173,7 +165,7 @@
     <section id="contacto" class="contact reveal">
       <div class="container">
         <h2>Contacto</h2>
-        <form id="contactForm">
+        <form id="contactForm" novalidate>
           <input type="text" placeholder="Nombre" required />
           <input type="email" placeholder="Email" required />
           <input type="text" placeholder="RUT" required />
@@ -191,13 +183,19 @@
       <button class="modal__close" id="loginClose"><i class="fa-solid fa-xmark"></i></button>
       <h2>Acceso Clientes</h2>
       <form id="loginForm">
-        <label>RUT</label>
+        <label for="loginUser">RUT</label>
         <input type="text" id="loginUser" required />
         <button type="submit" class="btn btn-primary">Ingresar</button>
       </form>
     </div>
   </div>
 
-  <script src="./app.js" nonce="abc123" defer></script>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 ACF Capital S.A. — Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./app.js" defer></script>
 </body>
 </html>
