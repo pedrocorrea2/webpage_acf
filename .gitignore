@@ -1,0 +1,6 @@
+node_modules
+.next
+
+docs
+out
+info_extract/data/PUB_NOMBRES_PJ.txt
